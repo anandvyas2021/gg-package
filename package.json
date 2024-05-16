@@ -1,18 +1,21 @@
 {
     "name": "gg-bsw",
-    "private": true,
-    "version": "0.0.0",
+    "private": false,
+    "version": "0.0.1",
     "type": "module",
+    "repository": "https://git@bitbucket.org:global-garner/gg-bsw.git",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "prepublishOnly": "yarn run build"
     },
     "dependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "react-router-dom": "^6.23.1"
+        "react-router-dom": "^6.23.1",
+        "vite-plugin-lib-inject-css": "^2.1.1"
     },
     "devDependencies": {
         "@types/react": "^18.2.66",
