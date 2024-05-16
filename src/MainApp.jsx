@@ -3,9 +3,7 @@ import React from "react";
 function MainApp() {
     return (
         <>
-            <p className="text-[40rem] leading-[30rem] font-black text-white">
-                BSW
-            </p>
+            <h1 className="text-5xl font-bold">Hello</h1>
         </>
     );
 }
