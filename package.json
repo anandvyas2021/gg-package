@@ -3,7 +3,20 @@
     "private": false,
     "version": "0.0.1",
     "type": "module",
-    "repository": "https://git@bitbucket.org:global-garner/gg-bsw.git",
+    "repository": "replace this url with project's repo link",
+    "files": [
+        "dist",
+        "package.json",
+        "README.md"
+    ],
+    "main": "./dist/gg-package.umd.js",
+    "module": "./dist/gg-package.es.js",
+    "exports": {
+        ".": {
+            "import": "./dist/gg-package.es.js",
+            "require": "./dist/gg-package.umd.js"
+        }
+    },
     "scripts": {
         "dev": "vite",
         "build": "vite build",

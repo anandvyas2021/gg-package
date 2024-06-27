@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import MainApp from "./MainApp.jsx";
-import "./index.css";
+import MainPackage from "./MainPackage";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <MainApp />
+        <MainPackage />
     </React.StrictMode>
 );
